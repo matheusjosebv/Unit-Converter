@@ -1,7 +1,18 @@
+/*  SETUP */
+
+:root {
+  --first-color: #6943ff;
+  --second-color: #f4f4f4;
+  --third-color: #5c577d;
+  --forth-color: #b295ff;
+  --fifth-color: #3d3d3d;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Inter", "sans-serif";
+  background-color: var(--second-color);
 }
 
 h1,
@@ -12,4 +23,67 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/*  SETUP */
+
+.head {
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  color: white;
+}
+
+.head .btn {
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 4px;
+  color: var(--fifth-color);
+  font-size: 22px;
+}
+
+.head input {
+  border: 2px solid var(--forth-color);
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 58px;
+  font-weight: 800;
+  width: auto;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px 0;
+}
+
+.results .conversion-container {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.results .conversion-container h3 {
+  color: var(--third-color);
+}
+
+.results .conversion-container p {
+  color: var(--fifth-color);
 }
