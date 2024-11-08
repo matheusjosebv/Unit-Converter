@@ -17,22 +17,25 @@
   <body>
     <div class="head">
       <h1>Metric/Imperial Unit Conversion</h1>
-      <input />
-      <button class="btn">Convert</button>
+      <input
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')"
+        id="input-el"
+      />
+      <button id="btn-el" class="btn">Convert</button>
     </div>
 
     <div class="results">
       <div class="meter-foot conversion-container">
         <h3>Length (Meters/Feet)</h3>
-        <p>20 Meters = 65.616 feet | 20 feet = 6.096 meters</p>
+        <p id="meter-foot"></p>
       </div>
       <div class="liter-gallon conversion-container">
-        <h3>Length (Meters/Feet)</h3>
-        <p>20 Meters = 65.616 feet | 20 feet = 6.096 meters</p>
+        <h3>Volume (Liters/Gallons)</h3>
+        <p id="liter-gallon"></p>
       </div>
       <div class="kilo-pound conversion-container">
-        <h3>Length (Meters/Feet)</h3>
-        <p>20 Meters = 65.616 feet | 20 feet = 6.096 meters</p>
+        <h3>Mass (Kilograms/Pounds)</h3>
+        <p id="kilo-pound"></p>
       </div>
     </div>
 

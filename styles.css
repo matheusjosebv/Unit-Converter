@@ -59,9 +59,8 @@ input {
   padding: 15px;
   font-size: 58px;
   font-weight: 800;
-  width: auto;
-  align-self: flex-start;
-  box-sizing: border-box;
+  width: 120px;
+  text-align: center;
 }
 
 .results {
